@@ -1,5 +1,84 @@
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1080px;
+  margin: 0 auto;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+}
+
+nav {
+  margin: auto;
+  height: 80px;
+  background-color: black;
+  padding: 0 20px;
+}
+
+nav ul {
+  display: flex;
+  height: 100%;
+  gap: 15px;
+  align-items: center;
+  list-style-type: none;
+}
+
+nav ul li:nth-child(1) {
+  margin-right: auto;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  color: blueviolet;
+}
+
+#hero {
+  min-height: 400px;
+  margin: 0 auto;
+
+  background-image: url(https://picsum.photos/id/16/1920/1080);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: cover;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 50px;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 900;
+}
+
+#about-me {
+  display: flex;
+  align-items: flex-start;
+  gap: 50px;
+  padding: 50px 0;
+}
+
+#about-me img {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+#about-me p {
+  margin-bottom: 20px;
 }
